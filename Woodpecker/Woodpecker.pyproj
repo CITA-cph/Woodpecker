@@ -1,0 +1,76 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a68df3e5-ce2a-48f1-836b-dcc18b268a1c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Woodpecker.py</StartupFile>
+    <SearchPath>..\..\..\..\PycharmProjects\OwlPy</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Woodpecker</Name>
+    <RootNamespace>Woodpecker</RootNamespace>
+    <InterpreterId>MSBuild|TensorFlow|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="continue_training.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="extract_model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="load_files.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="network_model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="timed_input.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="training_settings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="train_network.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Woodpecker.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="C:\Users\Mateusz\TensorFlow\">
+      <Id>TensorFlow</Id>
+      <Version>3.5</Version>
+      <Description>TensorFlow (Python 3.5 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\inputs.tbin" />
+    <Content Include="Data\outputs.tbin" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
