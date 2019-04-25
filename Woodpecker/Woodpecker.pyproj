@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a68df3e5-ce2a-48f1-836b-dcc18b268a1c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Woodpecker.py</StartupFile>
+    <StartupFile>Conv.py</StartupFile>
     <SearchPath>..\..\..\..\PycharmProjects\OwlPy</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="continue_training.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conv.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="extract_model.py">

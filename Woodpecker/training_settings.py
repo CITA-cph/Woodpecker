@@ -1,16 +1,16 @@
-inputs_file = "d:/OneDrive/Documents/Visual Studio 2017/Projects/Woodpecker/Woodpecker/Data/inputs.tbin"
-outputs_file = "d:/OneDrive/Documents/Visual Studio 2017/Projects/Woodpecker/Woodpecker/Data/outputs.tbin"
+inputs_file = "D:/OneDrive/Desktop/inputs.tbin"
+outputs_file = "D:/OneDrive/Desktop/outputs.tbin"
 
 save_path_weights = "d:/onedrive/documents/visual studio 2017/Projects/Woodpecker/Woodpecker/Model/extraction_weights.tbin"
 save_path_biases = "d:/onedrive/documents/visual studio 2017/Projects/Woodpecker/Woodpecker/Model/extraction_biases.tbin"
 
 model_path = "d:/onedrive/documents/visual studio 2017/Projects/Woodpecker/Woodpecker/Model/"
 
-train_size = 6000
+train_size = 5000
 test_size = 0
 valid_size = 0
 
-batch_size = 6000
+batch_size = 100
 
 epochs = 1000000
 save_every = 100  # the model will be saved every save_every epochs
@@ -35,5 +35,5 @@ model_n_0 = 1024
 model_n_1 = 800
 model_n_2 = 600
 model_n_3 = 200
-model_n_4 = 1
+model_n_4 = 1024
  
